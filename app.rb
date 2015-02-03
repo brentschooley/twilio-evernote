@@ -32,7 +32,6 @@ def make_note(note_store, note_title, note_body, notebook_name, resource=nil)
     # Notebook exists, get the notebook GUID
     twilio_notebook = notebooks.find { |nb| nb.name == notebook_name }
     notebook_guid = twilio_notebook.guid
-    puts "GUID: #{notebook_guid}"
   else
     # Create notebook and store GUID
     notebook = Evernote::EDAM::Type::Notebook.new()
