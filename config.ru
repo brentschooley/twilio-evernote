@@ -1,2 +1,2 @@
-require './memegen'
+require './app'
 run Sinatra::Application
